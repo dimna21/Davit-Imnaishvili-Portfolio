@@ -1,0 +1,412 @@
+/* Reset default styles */
+body, html {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container styling */
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    padding: 20px;
+}
+
+/* Tabs styling */
+.tabs-container {
+    background-color: rgba(200, 164, 212, 0.4);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for tabs */
+.tabs {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    background-color: rgba(162,196,148,0.4);
+    border-bottom: 1px solid #ccc;
+}
+
+.tab-link {
+    float: left;
+    display: block;
+    color: #333;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+}
+
+.tab-link:hover {
+    background-color: #ddd;
+}
+
+.tab-link.active {
+    background-color: rgba(200, 164, 212, 0.55);
+    border-bottom: 2px solid #ccc;
+}
+
+/* Styling for tab content */
+.tab-content {
+    display: none;
+    padding: 20px;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+/* Quiz links */
+.quiz-link {
+    text-decoration: none;
+    color: #333;
+}
+
+.quiz-link:hover {
+    text-decoration: underline;
+}
+
+/* Achievements styling */
+.achievements-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.achievement-item {
+    width: calc(50% - 10px);
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+}
+
+.achievement {
+    display: flex;
+    align-items: center;
+}
+
+.achievement-image {
+    margin-right: 10px;
+}
+
+.achievement-details h3 {
+    margin: 0;
+}
+
+/* Notes styling */
+.note {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+}
+
+.note-details {
+    padding-left: 10px;
+}
+
+/* Chat input styling */
+#chatInput {
+    margin-top: 20px;
+}
+
+#chatInput input[type="text"],
+#chatInput button {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#chatInput button {
+    background-color: #4CAF50; /* Green */
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#chatInput button:hover {
+    background-color: #45a049; /* Darker green */
+}
+
+/* Friend button styling */
+.fixed-button-container {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1000;
+}
+
+.fixed-button {
+    background-color: #4CAF50; /* Green */
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.fixed-button:hover {
+    background-color: #45a049; /* Darker green */
+}
+
+.fbb {
+    background-color: #4CAF50; /* Green */
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+    border-color: #4CAF50;
+    transition: background-color 0.3s;
+}
+
+.fbb:hover {
+    background-color: #45a049; /* Darker green */
+}
+
+.waitfa {
+    font-size: 20px;
+    color: #6e1f04;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    text-align: left;
+}
+.bg {
+    animation:slide 3s ease-in-out infinite alternate;
+    background-image: linear-gradient(-60deg, #6c3 50%, #09f 50%);
+    bottom:0;
+    left:-50%;
+    opacity:.5;
+    position:fixed;
+    right:-50%;
+    top:0;
+    z-index:-1;
+}
+
+.bg2 {
+    animation-direction:alternate-reverse;
+    animation-duration:4s;
+}
+
+.bg3 {
+    animation-duration:5s;
+}
+
+.content {
+    background-color:rgba(255,255,255,.8);
+    border-radius:.25em;
+    box-shadow:0 0 .25em rgba(0,0,0,.25);
+    box-sizing:border-box;
+    left:50%;
+    padding:10vmin;
+    position:fixed;
+    text-align:center;
+    top:50%;
+    transform:translate(-50%, -50%);
+}
+
+h1 {
+    font-family:monospace;
+}
+
+@keyframes slide {
+    0% {
+        transform:translateX(-25%);
+    }
+    100% {
+        transform:translateX(25%);
+    }
+}
+
+.popuquiz, .recently-created-quizzes{
+    background: #fff;
+    border: 2px solid #371F76;
+    border-radius: 8px;
+    padding: 20px 40px;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.admin-button {
+    position: relative;
+    top: 20px;
+    left: 10%;
+    transform: translateX(-50%);
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+}
+.challenge-button{
+    position: relative;
+    background-color: #4CAF50; /* Green */
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+.challenge-button:hover {
+    background-color: #45a049;
+}
+
+
+button.ban-button {
+    background-color: #f44336; /* Red background */
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+button.ban-button:hover {
+    background-color: #e53935; /* Darker red on hover */
+}
+
+button.ban-button:active {
+    background-color: #d32f2f; /* Even darker red on click */
+}
+
+/* Promote to Admin Button Styles */
+button.promote-button {
+    background-color: #008CBA; /* Blue background */
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+button.promote-button:hover {
+    background-color: #007bb5; /* Darker blue on hover */
+}
+
+button.promote-button:active {
+    background-color: #006ba1; /* Even darker blue on click */
+}
+button.promote-button {
+    background-color: #008CBA; /* Blue background */
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-left: 10px; /* Add some space between the buttons */
+    transition: background-color 0.3s;
+}
+
+button.promote-button:hover {
+    background-color: #007bb5; /* Darker blue on hover */
+}
+
+button.promote-button:active {
+    background-color: #006ba1; /* Even darker blue on click */
+}
+
+/* Fixed Button Container Styles */
+.fixed-button-container div {
+    display: flex;
+    align-items: center;
+}
+
+.challenge-button {
+    background-color: #4CAF50; /* Green */
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.challenge-button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+.fixed-button {
+    background-color: #4CAF50; /* Green */
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-top: 10px; /* Add some space between the buttons */
+    transition: background-color 0.3s;
+}
+
+.fixed-button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+button.ban-button {
+    background-color: #f44336; /* Red background */
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+button.ban-button:hover {
+    background-color: #e53935; /* Darker red on hover */
+}
+
+button.ban-button:active {
+    background-color: #d32f2f; /* Even darker red on click */
+}
+
+button.unban-button {
+    background-color: #45a049; /* Red background */
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+
+}
+
+button.unban-button:hover {
+    background-color: #ff8c00; /* Darker orange on hover */
+}
+
+button.unban-button:active {
+    background-color: #ff7f00; /* Even darker orange on click */
+}
